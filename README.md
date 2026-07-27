@@ -9,6 +9,7 @@
 The PCB was completed by placing the components, routing all electrical connections, and verifying the design using the **Design Rules Check (DRC)**. The circuit consists of an **NE555P timer IC**, **1 kΩ resistor**, **10 kΩ resistor**, **10 µF polarized capacitor**, and **10 nF capacitor**.
 
 Finally, I successfully completed the **LTspice simulation**, **KiCad schematic**, and **PCB layout** for the 555 timer astable multivibrator circuit with all design checks passing successfully.
+
 <img src="https://github.com/bhargavabm/images/blob/main/5c815ea8-3033-4037-b0e9-76776bb1c9f7.jpg?raw=true"
      alt="Task Image"
      width="700">
