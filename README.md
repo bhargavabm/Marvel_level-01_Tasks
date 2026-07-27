@@ -58,7 +58,7 @@ This task improved my understanding of **power electronics**, **inductive chargi
 
 Finally, I successfully completed the conceptual simulation of a wireless charging system in **Tinkercad** and gained practical knowledge of the basic principles behind wireless power transfer.
 
-<img src="https://github.com/bhargavabm/images/blob/main/c06e279a-4c09-47d9-9a18-1ac754dbc436.jpg?raw=true"
+<img src="https://github.com/bhargavabm/images/blob/main/7ee3b829-757d-41b1-8da0-444e80d79f54.jpg?raw=true"
      alt="Wireless Charger Simulation on Tinkercad"
      width="800">
 
