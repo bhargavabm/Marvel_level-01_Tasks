@@ -19,14 +19,8 @@ Finally, I successfully completed the **LTspice simulation**, **KiCad schematic*
 <img src="https://github.com/bhargavabm/images/blob/main/3f4acea9-5d5f-4fb4-a774-eb564fbbcc4d.jpg?raw=true"
      alt="Task Image 3"
      width="700">
-<img src="https://github.com/bhargavabm/images/blob/main/9e96a5c3-53e3-490a-ac13-160c2a4096fd.jpg?raw=true"
-     alt="LTspice Simulation Waveform"
-     width="800">
 <img src="https://github.com/bhargavabm/images/blob/main/fa9f8d3d-5333-4b0b-9990-4cc605ecd186.jpg?raw=true"
      alt="KiCad PCB Layout"
-     width="800">
-<img src="https://github.com/bhargavabm/images/blob/main/61fede80-eb39-45a9-ae89-0c9dafda6d4d.jpg?raw=true"
-     alt="KiCad Schematic"
      width="800">
 
 ---
@@ -46,6 +40,57 @@ Finally, I successfully completed the **LM35 threshold detection system** and th
      alt="LM35 Temperature Detection Circuit"
      width="800">
 
+---
+# Task 10 - Auto Night Lamp Using LED for Electric Vehicles (Embedded)
+
+**Objective:** Design and implement an automatic night lamp circuit using an **LDR (Light Dependent Resistor)** and a **BJT transistor** to control an LED based on ambient light intensity. The LED automatically turns ON in low-light conditions and OFF in bright light, simulating an automatic headlamp system for electric vehicles.
+
+**Outcomes and Learnings:** I successfully designed and implemented an **automatic night lamp circuit** using an **LDR**, **NPN BJT transistor**, **LED**, and resistors. The LDR continuously monitored the surrounding light intensity, and the transistor acted as an electronic switch to control the LED.
+
+When the surrounding light intensity decreased, the resistance of the LDR increased, causing the transistor to turn ON and illuminate the LED. Under bright light conditions, the LDR resistance decreased, switching the transistor OFF and turning the LED OFF. The circuit was tested using a **mobile flashlight** to simulate different lighting conditions and verify its operation.
+
+This task enhanced my understanding of **light sensing**, **analog sensor interfacing**, **transistor switching**, and **automatic control systems** used in embedded applications. It also demonstrated a practical implementation of an automatic headlamp system commonly used in electric vehicles and smart lighting systems.
+
+Finally, I successfully completed the **Auto Night Lamp Using LED** project, gaining practical knowledge of sensor-based automation and transistor-controlled switching circuits.
+
+<img src="https://github.com/bhargavabm/images/blob/main/868106ce-485e-4008-9ecd-726bb9de23c6.jpg?raw=true"
+     alt="Auto Night Lamp Using LED Circuit"
+     width="800">
+<img src="https://github.com/bhargavabm/images/blob/main/ca2e35be-e92b-4e5f-8763-1e9a7ab3d18b.jpg?raw=true"
+     alt="Auto Night Lamp Circuit Demonstration"
+     width="800">  
+
+---
+# Task 11 - Buck Converter on LTspice (Power Electronics)
+
+**Objective:** Design and simulate a **DC-DC Buck Converter** using **LTspice** to understand the principle of step-down voltage conversion. Observe the input voltage, output voltage, inductor current waveform, and switching frequency to study the performance and efficiency of a switching power converter.
+
+**Outcomes and Learnings:** I successfully designed and simulated a **DC-DC Buck Converter** in **LTspice** using a **MOSFET**, **Schottky diode (1N5819)**, **400 µH inductor**, **100 µF capacitor**, and a **20 Ω resistive load**. A PWM pulse source was used to drive the MOSFET and control the switching operation of the converter.
+
+The converter was supplied with an **input voltage of 50 V** and successfully produced an **output voltage of approximately 19.67 V**, demonstrating effective step-down voltage conversion. During the simulation, I observed the switching operation of the MOSFET, the charging and discharging behavior of the inductor, and the filtering action of the output capacitor, which helped maintain a stable DC output.
+
+The inductor current remained **continuously above zero** throughout the switching cycle, confirming that the converter operated in **Continuous Conduction Mode (CCM)**. This mode provides lower current ripple, improved efficiency, and more stable output voltage compared to discontinuous conduction mode.
+
+This task enhanced my understanding of **switch-mode power supplies (SMPS)**, **Pulse Width Modulation (PWM)**, **inductor energy storage**, **capacitor filtering**, **continuous conduction mode (CCM)**, and the practical operation of DC-DC buck converters used in electric vehicles, battery-powered devices, and embedded power management systems.
+
+Finally, I successfully completed the **Buck Converter simulation in LTspice**, obtaining an output voltage of **19.67 V** from a **50 V** input while verifying stable operation in **Continuous Conduction Mode (CCM)**.
+
+<img src="https://github.com/bhargavabm/images/blob/main/91216a66-bc42-4f4c-85c4-7f53341fcd35.jpg?raw=true"
+     alt="Buck Converter Output Analysis"
+     width="800">
+<img src="https://github.com/bhargavabm/images/blob/main/9dd42ff3-422c-42c8-b9ae-e223eff3a33e.jpg?raw=true"
+     alt="Buck Converter Output Waveforms"
+     width="800">
+<img src="https://github.com/bhargavabm/images/blob/main/dc15e079-0da4-4ee3-9fbb-ad810753954d.jpg?raw=true"
+     alt="Buck Converter LTspice Simulation Results"
+     width="800">
+<img src="https://github.com/bhargavabm/images/blob/main/962af105-660f-4557-be2f-5255d48a7290.jpg?raw=true"
+     alt="Inductor Current Waveform in Continuous Conduction Mode (CCM)"
+     width="800">
+<img src="https://github.com/bhargavabm/images/blob/main/bb119ab1-c8fe-43ef-957e-9fd507088e09.jpg?raw=true"
+     alt="Buck Converter Circuit in LTspice"
+     width="800">
+     
 ---
 # Task 12 - Wireless Charger Simulation on Tinkercad (Power Electronics)
 
