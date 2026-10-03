@@ -24,6 +24,30 @@ Finally, I successfully completed the **LTspice simulation**, **KiCad schematic*
      width="800">
 
 ---
+
+# Task 02 - Point Turn of a Vehicle with Ultrasonic Sensor (Embedded)
+
+**Objective:** Build an **obstacle-avoiding robot** using an **HC-SR04 ultrasonic sensor**, **Arduino Uno**, and a **motor driver**. The vehicle detects obstacles in its path and performs a **point turn**, rotating in place, to change direction. This task combines sensor data processing with **differential motor control**.
+
+**Outcomes and Learnings:** I successfully built an **obstacle-avoiding vehicle** using an **Arduino Uno**, **HC-SR04 ultrasonic sensor**, **L298N motor driver**, and **two DC motors**. The Arduino sent a trigger pulse to the sensor, measured the width of the returning echo pulse, and converted it into a distance in centimetres. The vehicle drove forward while the path was clear.
+
+When an obstacle came closer than the preset threshold distance of **20 cm**, the Arduino stopped both motors and performed a **point turn** by driving one wheel forward and the other backward at the same speed. This made the vehicle rotate about its own centre instead of making a wide arc. Once the turn was complete, the vehicle resumed moving forward in the new direction.
+
+During this task, I learned how **ultrasonic distance measurement** works, how to use `pulseIn()` with a timeout so the program never hangs, and how a **motor driver (H-bridge)** controls motor direction and speed using direction pins and **PWM**. I also learned the principle of **differential drive**, where steering is achieved by running the left and right wheels differently. I understood the importance of a **common ground** between the Arduino and the motor power supply, and how a simple **sense, decide and act** loop forms the basis of autonomous robots.
+
+This task enhanced my understanding of **sensor interfacing**, **motor control**, **autonomous navigation logic**, and their applications in robot vacuum cleaners, warehouse robots, parking assist systems, and collision avoidance in vehicles.
+
+Finally, I successfully completed the **Obstacle-Avoiding Vehicle with Point Turn**, which detected obstacles and avoided them autonomously using ultrasonic sensing and differential motor control.
+
+<img src="https://github.com/bhargavabm/images/blob/main/d06f7a5b-227f-4db7-b390-06c3bdf5719a.jpg?raw=true"
+     alt="Obstacle Avoiding Vehicle Circuit"
+     width="800">
+<img src="https://github.com/bhargavabm/images/blob/main/78d55647-66ed-4244-a7da-c27551f7cac5.jpg?raw=true"
+     alt="Vehicle Performing Point Turn"
+     width="800">
+
+---
+
 # Task 03 - Temperature and Humidity Detection (Embedded)
 
 **Objective:** Use the LM35 analog temperature sensor to monitor ambient temperature and trigger an LED using a BJT transistor when the temperature exceeds a predefined threshold. Simultaneously, interface the DHT11 digital sensor with an Arduino to measure and display temperature and humidity values on a 16×2 LCD. This task introduces analog and digital sensor interfacing, threshold-based control, and real-time data display.
