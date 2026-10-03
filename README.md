@@ -262,30 +262,7 @@ Finally, I successfully completed the **AC to DC Conversion** task, understandin
 
 ---
 
-# Task 16 - Generating an AC-Like Signal Using a 555 Timer and MOSFETs (Power Electronics)
 
-**Objective:** Use a **555 timer IC** to generate a square wave and drive **N-channel MOSFETs in a push-pull configuration**. As the timer output alternates between HIGH and LOW, one MOSFET connects the load side to **ground** while the other pulls it to **Vcc**, producing an **AC-like square waveform**. The MOSFETs amplify the signal, so the circuit can handle higher current loads.
-
-**Outcomes and Learnings:** I designed and simulated an **AC-like signal generator** in **Tinkercad** using a **555 timer** in **astable mode**, **three N-channel MOSFETs**, a **12 V supply**, resistors, capacitors and an **oscilloscope**. The 555 was set up with **R1 = 1 kΩ**, **R2 = 10 kΩ** and **C1 = 0.1 µF**, giving a frequency of about **685 Hz** from `f = 1.44 / ((R1 + 2·R2) × C1)`, with a **10 nF** capacitor on the control pin for stability.
-
-The 555 output (pin 3) drove the **low-side MOSFET (Q1)** directly through a gate resistor. A third MOSFET (**Q3**) with a pull-up resistor worked as an **inverter**, driving the **high-side MOSFET (Q2)** in the opposite phase. The two MOSFETs therefore never conducted together: when Q1 was ON, the midpoint was pulled to **ground**, and when Q2 was ON, it was pulled up toward **Vcc**. A **100 µF polarised coupling capacitor** then passed this swing to a **load resistor**, centring the waveform around 0 V so the load saw a signal swinging both **above and below zero**. On the oscilloscope, channel 1 showed the 555 square wave and channel 2 showed the AC-like waveform across the load.
-
-I also observed **power amplification**: the 555 output only had to drive the MOSFET gates, which draw almost no current, while the MOSFETs supplied the load current from the 12 V supply. Lowering the load resistance showed that the load could draw far more current than the 555 pin could supply on its own.
-
-During this task, I learned how a **555 astable circuit** generates a square wave and how R and C values set its frequency, how an **N-channel MOSFET works as a switch**, and how a **push-pull stage** drives a load in both directions. I also learned why the two MOSFETs must be driven in **opposite phase** to avoid **shoot-through**, why **gate resistors** help limit it, and why a **coupling capacitor** makes the output swing around zero. I understood that a high-side N-channel MOSFET gets less gate drive as its source rises, so real designs use a **gate driver or bootstrap circuit**, and that the output is a **square wave**, not a sine wave, so a real inverter adds a transformer and a filter.
-
-This task enhanced my understanding of **DC to AC conversion**, **MOSFET push-pull drivers** and **power amplification**, as used in inverters, motor drivers, wireless chargers and electric vehicle power electronics.
-
-Finally, I completed the **AC-Like Signal Generator using a 555 Timer and MOSFETs**, learning how to convert DC into an AC-like signal and observe power amplification.
-
-<img src="https://github.com/bhargavabm/images/blob/main/YOUR-IMAGE-1.jpg?raw=true"
-     alt="555 Timer and MOSFET Push-Pull Circuit in Tinkercad"
-     width="800">
-<img src="https://github.com/bhargavabm/images/blob/main/YOUR-IMAGE-2.jpg?raw=true"
-     alt="Oscilloscope Waveforms of 555 Output and AC-Like Load Signal"
-     width="800">
-
----
 
 # Task 17 - Building a Basic H-Bridge Motor Driver using MOSFETs (Power Electronics)
 
